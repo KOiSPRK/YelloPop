@@ -17,6 +17,17 @@
 		B2DED18D2363D97D004DE2BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DED18B2363D97D004DE2BB /* LaunchScreen.storyboard */; };
 		B2DED1982363D97D004DE2BB /* YellowPopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DED1972363D97D004DE2BB /* YellowPopTests.swift */; };
 		B2DED1A32363D97D004DE2BB /* YellowPopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DED1A22363D97D004DE2BB /* YellowPopUITests.swift */; };
+		B2DED1BE2363DE80004DE2BB /* APIService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DED1B52363DE80004DE2BB /* APIService.framework */; };
+		B2DED1C52363DE80004DE2BB /* APIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DED1C42363DE80004DE2BB /* APIServiceTests.swift */; };
+		B2DED1C72363DE80004DE2BB /* APIService.h in Headers */ = {isa = PBXBuildFile; fileRef = B2DED1B72363DE80004DE2BB /* APIService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2DED1CA2363DE80004DE2BB /* APIService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DED1B52363DE80004DE2BB /* APIService.framework */; };
+		B2DED1CB2363DE80004DE2BB /* APIService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2DED1B52363DE80004DE2BB /* APIService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B2DED1E12363DEB2004DE2BB /* Logic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DED1D82363DEB2004DE2BB /* Logic.framework */; };
+		B2DED1E82363DEB2004DE2BB /* LogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DED1E72363DEB2004DE2BB /* LogicTests.swift */; };
+		B2DED1EA2363DEB2004DE2BB /* Logic.h in Headers */ = {isa = PBXBuildFile; fileRef = B2DED1DA2363DEB2004DE2BB /* Logic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2DED1ED2363DEB2004DE2BB /* Logic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DED1D82363DEB2004DE2BB /* Logic.framework */; };
+		B2DED1EE2363DEB2004DE2BB /* Logic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2DED1D82363DEB2004DE2BB /* Logic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B2DED1FD2363E0E2004DE2BB /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DED1FC2363E0E2004DE2BB /* History.swift */; };
 		D009DAB3A1158C27705078F8 /* Pods_YellowPopUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6D1E8D818DB1E9957FD048 /* Pods_YellowPopUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +46,64 @@
 			remoteGlobalIDString = B2DED17C2363D97C004DE2BB;
 			remoteInfo = YellowPop;
 		};
+		B2DED1BF2363DE80004DE2BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2DED1752363D97C004DE2BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2DED1B42363DE80004DE2BB;
+			remoteInfo = APIService;
+		};
+		B2DED1C12363DE80004DE2BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2DED1752363D97C004DE2BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2DED17C2363D97C004DE2BB;
+			remoteInfo = YellowPop;
+		};
+		B2DED1C82363DE80004DE2BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2DED1752363D97C004DE2BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2DED1B42363DE80004DE2BB;
+			remoteInfo = APIService;
+		};
+		B2DED1E22363DEB2004DE2BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2DED1752363D97C004DE2BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2DED1D72363DEB2004DE2BB;
+			remoteInfo = Logic;
+		};
+		B2DED1E42363DEB2004DE2BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2DED1752363D97C004DE2BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2DED17C2363D97C004DE2BB;
+			remoteInfo = YellowPop;
+		};
+		B2DED1EB2363DEB2004DE2BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2DED1752363D97C004DE2BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2DED1D72363DEB2004DE2BB;
+			remoteInfo = Logic;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B2DED1CC2363DE80004DE2BB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B2DED1CB2363DE80004DE2BB /* APIService.framework in Embed Frameworks */,
+				B2DED1EE2363DEB2004DE2BB /* Logic.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		02EEB528089189B4295C2CB6 /* Pods-YellowPopUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowPopUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YellowPopUITests/Pods-YellowPopUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -56,6 +124,19 @@
 		B2DED19E2363D97D004DE2BB /* YellowPopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YellowPopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DED1A22363D97D004DE2BB /* YellowPopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowPopUITests.swift; sourceTree = "<group>"; };
 		B2DED1A42363D97D004DE2BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2DED1B52363DE80004DE2BB /* APIService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APIService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2DED1B72363DE80004DE2BB /* APIService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIService.h; sourceTree = "<group>"; };
+		B2DED1B82363DE80004DE2BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2DED1BD2363DE80004DE2BB /* APIServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2DED1C42363DE80004DE2BB /* APIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceTests.swift; sourceTree = "<group>"; };
+		B2DED1C62363DE80004DE2BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2DED1D82363DEB2004DE2BB /* Logic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Logic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2DED1DA2363DEB2004DE2BB /* Logic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logic.h; sourceTree = "<group>"; };
+		B2DED1DB2363DEB2004DE2BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2DED1E02363DEB2004DE2BB /* LogicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2DED1E72363DEB2004DE2BB /* LogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicTests.swift; sourceTree = "<group>"; };
+		B2DED1E92363DEB2004DE2BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2DED1FC2363E0E2004DE2BB /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		C8A7B1D1126605F049E19747 /* Pods-YellowPop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowPop.release.xcconfig"; path = "Pods/Target Support Files/Pods-YellowPop/Pods-YellowPop.release.xcconfig"; sourceTree = "<group>"; };
 		D11618DEAB51191B0D5B3042 /* Pods-YellowPopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowPopUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YellowPopUITests/Pods-YellowPopUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D4C1AFEA967DEA59133DEE91 /* Pods-YellowPop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowPop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YellowPop/Pods-YellowPop.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				57C6A1B0AA4929E839F62617 /* Pods_YellowPop.framework in Frameworks */,
+				B2DED1ED2363DEB2004DE2BB /* Logic.framework in Frameworks */,
+				B2DED1CA2363DE80004DE2BB /* APIService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +168,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				D009DAB3A1158C27705078F8 /* Pods_YellowPopUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DED1B22363DE80004DE2BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DED1BA2363DE80004DE2BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DED1BE2363DE80004DE2BB /* APIService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DED1D52363DEB2004DE2BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DED1DD2363DEB2004DE2BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DED1E12363DEB2004DE2BB /* Logic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +223,10 @@
 				B2DED17F2363D97C004DE2BB /* YellowPop */,
 				B2DED1962363D97D004DE2BB /* YellowPopTests */,
 				B2DED1A12363D97D004DE2BB /* YellowPopUITests */,
+				B2DED1B62363DE80004DE2BB /* APIService */,
+				B2DED1C32363DE80004DE2BB /* APIServiceTests */,
+				B2DED1D92363DEB2004DE2BB /* Logic */,
+				B2DED1E62363DEB2004DE2BB /* LogicTests */,
 				B2DED17E2363D97C004DE2BB /* Products */,
 				7A4D37C7B4FC471B2C09DA6A /* Pods */,
 				CD7E11F1DDAF9E1DA0528067 /* Frameworks */,
@@ -122,6 +239,10 @@
 				B2DED17D2363D97C004DE2BB /* YellowPop.app */,
 				B2DED1932363D97D004DE2BB /* YellowPopTests.xctest */,
 				B2DED19E2363D97D004DE2BB /* YellowPopUITests.xctest */,
+				B2DED1B52363DE80004DE2BB /* APIService.framework */,
+				B2DED1BD2363DE80004DE2BB /* APIServiceTests.xctest */,
+				B2DED1D82363DEB2004DE2BB /* Logic.framework */,
+				B2DED1E02363DEB2004DE2BB /* LogicTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,13 +250,13 @@
 		B2DED17F2363D97C004DE2BB /* YellowPop */ = {
 			isa = PBXGroup;
 			children = (
-				B2DED1802363D97C004DE2BB /* AppDelegate.swift */,
-				B2DED1822363D97C004DE2BB /* SceneDelegate.swift */,
-				B2DED1842363D97C004DE2BB /* ViewController.swift */,
-				B2DED1862363D97C004DE2BB /* Main.storyboard */,
-				B2DED1892363D97D004DE2BB /* Assets.xcassets */,
-				B2DED18B2363D97D004DE2BB /* LaunchScreen.storyboard */,
 				B2DED18E2363D97D004DE2BB /* Info.plist */,
+				B2DED1F62363DEF6004DE2BB /* Resources */,
+				B2DED1F52363DEEE004DE2BB /* Core */,
+				B2DED1FB2363DF83004DE2BB /* Models */,
+				B2DED1FA2363DF7A004DE2BB /* ViewModels */,
+				B2DED1F92363DF6D004DE2BB /* ViewControllers */,
+				B2DED1F72363DF02004DE2BB /* Interfaces */,
 			);
 			path = YellowPop;
 			sourceTree = "<group>";
@@ -158,6 +279,91 @@
 			path = YellowPopUITests;
 			sourceTree = "<group>";
 		};
+		B2DED1B62363DE80004DE2BB /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				B2DED1B72363DE80004DE2BB /* APIService.h */,
+				B2DED1B82363DE80004DE2BB /* Info.plist */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		B2DED1C32363DE80004DE2BB /* APIServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2DED1C42363DE80004DE2BB /* APIServiceTests.swift */,
+				B2DED1C62363DE80004DE2BB /* Info.plist */,
+			);
+			path = APIServiceTests;
+			sourceTree = "<group>";
+		};
+		B2DED1D92363DEB2004DE2BB /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				B2DED1DA2363DEB2004DE2BB /* Logic.h */,
+				B2DED1DB2363DEB2004DE2BB /* Info.plist */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		B2DED1E62363DEB2004DE2BB /* LogicTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2DED1E72363DEB2004DE2BB /* LogicTests.swift */,
+				B2DED1E92363DEB2004DE2BB /* Info.plist */,
+			);
+			path = LogicTests;
+			sourceTree = "<group>";
+		};
+		B2DED1F52363DEEE004DE2BB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B2DED1802363D97C004DE2BB /* AppDelegate.swift */,
+				B2DED1822363D97C004DE2BB /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B2DED1F62363DEF6004DE2BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2DED1892363D97D004DE2BB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B2DED1F72363DF02004DE2BB /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				B2DED1862363D97C004DE2BB /* Main.storyboard */,
+				B2DED18B2363D97D004DE2BB /* LaunchScreen.storyboard */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		B2DED1F92363DF6D004DE2BB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2DED1842363D97C004DE2BB /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B2DED1FA2363DF7A004DE2BB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B2DED1FB2363DF83004DE2BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2DED1FC2363E0E2004DE2BB /* History.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CD7E11F1DDAF9E1DA0528067 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +376,25 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B2DED1B02363DE80004DE2BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DED1C72363DE80004DE2BB /* APIService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DED1D32363DEB2004DE2BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DED1EA2363DEB2004DE2BB /* Logic.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		B2DED17C2363D97C004DE2BB /* YellowPop */ = {
 			isa = PBXNativeTarget;
@@ -179,10 +404,13 @@
 				B2DED1792363D97C004DE2BB /* Sources */,
 				B2DED17A2363D97C004DE2BB /* Frameworks */,
 				B2DED17B2363D97C004DE2BB /* Resources */,
+				B2DED1CC2363DE80004DE2BB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B2DED1C92363DE80004DE2BB /* PBXTargetDependency */,
+				B2DED1EC2363DEB2004DE2BB /* PBXTargetDependency */,
 			);
 			name = YellowPop;
 			productName = YellowPop;
@@ -227,6 +455,80 @@
 			productReference = B2DED19E2363D97D004DE2BB /* YellowPopUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B2DED1B42363DE80004DE2BB /* APIService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2DED1D12363DE80004DE2BB /* Build configuration list for PBXNativeTarget "APIService" */;
+			buildPhases = (
+				B2DED1B02363DE80004DE2BB /* Headers */,
+				B2DED1B12363DE80004DE2BB /* Sources */,
+				B2DED1B22363DE80004DE2BB /* Frameworks */,
+				B2DED1B32363DE80004DE2BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APIService;
+			productName = APIService;
+			productReference = B2DED1B52363DE80004DE2BB /* APIService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B2DED1BC2363DE80004DE2BB /* APIServiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2DED1D22363DE80004DE2BB /* Build configuration list for PBXNativeTarget "APIServiceTests" */;
+			buildPhases = (
+				B2DED1B92363DE80004DE2BB /* Sources */,
+				B2DED1BA2363DE80004DE2BB /* Frameworks */,
+				B2DED1BB2363DE80004DE2BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2DED1C02363DE80004DE2BB /* PBXTargetDependency */,
+				B2DED1C22363DE80004DE2BB /* PBXTargetDependency */,
+			);
+			name = APIServiceTests;
+			productName = APIServiceTests;
+			productReference = B2DED1BD2363DE80004DE2BB /* APIServiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B2DED1D72363DEB2004DE2BB /* Logic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2DED1EF2363DEB2004DE2BB /* Build configuration list for PBXNativeTarget "Logic" */;
+			buildPhases = (
+				B2DED1D32363DEB2004DE2BB /* Headers */,
+				B2DED1D42363DEB2004DE2BB /* Sources */,
+				B2DED1D52363DEB2004DE2BB /* Frameworks */,
+				B2DED1D62363DEB2004DE2BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Logic;
+			productName = Logic;
+			productReference = B2DED1D82363DEB2004DE2BB /* Logic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B2DED1DF2363DEB2004DE2BB /* LogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2DED1F22363DEB2004DE2BB /* Build configuration list for PBXNativeTarget "LogicTests" */;
+			buildPhases = (
+				B2DED1DC2363DEB2004DE2BB /* Sources */,
+				B2DED1DD2363DEB2004DE2BB /* Frameworks */,
+				B2DED1DE2363DEB2004DE2BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2DED1E32363DEB2004DE2BB /* PBXTargetDependency */,
+				B2DED1E52363DEB2004DE2BB /* PBXTargetDependency */,
+			);
+			name = LogicTests;
+			productName = LogicTests;
+			productReference = B2DED1E02363DEB2004DE2BB /* LogicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -248,6 +550,20 @@
 						CreatedOnToolsVersion = 11.1;
 						TestTargetID = B2DED17C2363D97C004DE2BB;
 					};
+					B2DED1B42363DE80004DE2BB = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					B2DED1BC2363DE80004DE2BB = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = B2DED17C2363D97C004DE2BB;
+					};
+					B2DED1D72363DEB2004DE2BB = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					B2DED1DF2363DEB2004DE2BB = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = B2DED17C2363D97C004DE2BB;
+					};
 				};
 			};
 			buildConfigurationList = B2DED1782363D97C004DE2BB /* Build configuration list for PBXProject "YellowPop" */;
@@ -266,6 +582,10 @@
 				B2DED17C2363D97C004DE2BB /* YellowPop */,
 				B2DED1922363D97D004DE2BB /* YellowPopTests */,
 				B2DED19D2363D97D004DE2BB /* YellowPopUITests */,
+				B2DED1B42363DE80004DE2BB /* APIService */,
+				B2DED1BC2363DE80004DE2BB /* APIServiceTests */,
+				B2DED1D72363DEB2004DE2BB /* Logic */,
+				B2DED1DF2363DEB2004DE2BB /* LogicTests */,
 			);
 		};
 /* End PBXProject section */
@@ -289,6 +609,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B2DED19C2363D97D004DE2BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DED1B32363DE80004DE2BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DED1BB2363DE80004DE2BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DED1D62363DEB2004DE2BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DED1DE2363DEB2004DE2BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -373,6 +721,7 @@
 			files = (
 				B2DED1852363D97C004DE2BB /* ViewController.swift in Sources */,
 				B2DED1812363D97C004DE2BB /* AppDelegate.swift in Sources */,
+				B2DED1FD2363E0E2004DE2BB /* History.swift in Sources */,
 				B2DED1832363D97C004DE2BB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +742,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2DED1B12363DE80004DE2BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DED1B92363DE80004DE2BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DED1C52363DE80004DE2BB /* APIServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DED1D42363DEB2004DE2BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DED1DC2363DEB2004DE2BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DED1E82363DEB2004DE2BB /* LogicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -405,6 +784,36 @@
 			isa = PBXTargetDependency;
 			target = B2DED17C2363D97C004DE2BB /* YellowPop */;
 			targetProxy = B2DED19F2363D97D004DE2BB /* PBXContainerItemProxy */;
+		};
+		B2DED1C02363DE80004DE2BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2DED1B42363DE80004DE2BB /* APIService */;
+			targetProxy = B2DED1BF2363DE80004DE2BB /* PBXContainerItemProxy */;
+		};
+		B2DED1C22363DE80004DE2BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2DED17C2363D97C004DE2BB /* YellowPop */;
+			targetProxy = B2DED1C12363DE80004DE2BB /* PBXContainerItemProxy */;
+		};
+		B2DED1C92363DE80004DE2BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2DED1B42363DE80004DE2BB /* APIService */;
+			targetProxy = B2DED1C82363DE80004DE2BB /* PBXContainerItemProxy */;
+		};
+		B2DED1E32363DEB2004DE2BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2DED1D72363DEB2004DE2BB /* Logic */;
+			targetProxy = B2DED1E22363DEB2004DE2BB /* PBXContainerItemProxy */;
+		};
+		B2DED1E52363DEB2004DE2BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2DED17C2363D97C004DE2BB /* YellowPop */;
+			targetProxy = B2DED1E42363DEB2004DE2BB /* PBXContainerItemProxy */;
+		};
+		B2DED1EC2363DEB2004DE2BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2DED1D72363DEB2004DE2BB /* Logic */;
+			targetProxy = B2DED1EB2363DEB2004DE2BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -668,6 +1077,194 @@
 			};
 			name = Release;
 		};
+		B2DED1CD2363DE80004DE2BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = E47UGP5L2T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = APIService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.koisprk.APIService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B2DED1CE2363DE80004DE2BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = E47UGP5L2T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = APIService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.koisprk.APIService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B2DED1CF2363DE80004DE2BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E47UGP5L2T;
+				INFOPLIST_FILE = APIServiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.koisprk.APIServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YellowPop.app/YellowPop";
+			};
+			name = Debug;
+		};
+		B2DED1D02363DE80004DE2BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E47UGP5L2T;
+				INFOPLIST_FILE = APIServiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.koisprk.APIServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YellowPop.app/YellowPop";
+			};
+			name = Release;
+		};
+		B2DED1F02363DEB2004DE2BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = E47UGP5L2T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Logic/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.koisprk.Logic;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B2DED1F12363DEB2004DE2BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = E47UGP5L2T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Logic/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.koisprk.Logic;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B2DED1F32363DEB2004DE2BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E47UGP5L2T;
+				INFOPLIST_FILE = LogicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.koisprk.LogicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YellowPop.app/YellowPop";
+			};
+			name = Debug;
+		};
+		B2DED1F42363DEB2004DE2BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E47UGP5L2T;
+				INFOPLIST_FILE = LogicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.koisprk.LogicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YellowPop.app/YellowPop";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -703,6 +1300,42 @@
 			buildConfigurations = (
 				B2DED1AE2363D97D004DE2BB /* Debug */,
 				B2DED1AF2363D97D004DE2BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2DED1D12363DE80004DE2BB /* Build configuration list for PBXNativeTarget "APIService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2DED1CD2363DE80004DE2BB /* Debug */,
+				B2DED1CE2363DE80004DE2BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2DED1D22363DE80004DE2BB /* Build configuration list for PBXNativeTarget "APIServiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2DED1CF2363DE80004DE2BB /* Debug */,
+				B2DED1D02363DE80004DE2BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2DED1EF2363DEB2004DE2BB /* Build configuration list for PBXNativeTarget "Logic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2DED1F02363DEB2004DE2BB /* Debug */,
+				B2DED1F12363DEB2004DE2BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2DED1F22363DEB2004DE2BB /* Build configuration list for PBXNativeTarget "LogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2DED1F32363DEB2004DE2BB /* Debug */,
+				B2DED1F42363DEB2004DE2BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
