@@ -1,0 +1,6 @@
+framework module Pods_YellowPopTests {
+  umbrella header "Pods-YellowPopTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
