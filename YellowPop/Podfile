@@ -6,6 +6,7 @@ target 'YellowPop' do
   use_frameworks!
 
   # Pods for YellowPop
+  pod 'TPKeyboardAvoiding'
 
   target 'YellowPopTests' do
     inherit! :search_paths

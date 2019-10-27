@@ -8,14 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		0678627CA1F5909B29D22795D83BA06F /* Pods-YellowPopTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6533421923FC1DE5469B12F3B81B1FF /* Pods-YellowPopTests-dummy.m */; };
-		0BE4B3EE7BCBFC13C5377D2A0F6624AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		332B3CBE25116CF12147D3BF07CCC8AB /* Pods-YellowPop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 599E2B0AF582C5EC72BE33D6EB006AE6 /* Pods-YellowPop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2022804A7E18DD58A57D748DD12ECA75 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A405D45DEFE0A3D269C6622186C957E3 /* TPKeyboardAvoidingCollectionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		21CE81EE6C06F2C20092F7579B7B3B5F /* TPKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0924E4EDB10387E8DE44E82D2148B052 /* TPKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29CA9072A401A6E718AC1051CD7B478C /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7585CE018D429CC0B8BCEC6FD085541B /* UIScrollView+TPKeyboardAvoidingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C42606B41B3D420457E16709DDCE226 /* Pods-YellowPopTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D893C374022D192D63752464288FB09F /* Pods-YellowPopTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		64B2190AB6C63E93FF925D0C95F960FA /* Pods-YellowPop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B72CD08A97B38444DA0D3C058FA40C2 /* Pods-YellowPop-dummy.m */; };
+		5D0C23493B5B6CEE4DDDB2DBAA53AD61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		6695189EB6D1259B18279404582E6B2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		76554DCCBDA2E7CDA6C9838DB1013AA5 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6814AF620C1DA0B641B91F9FDCF7680C /* TPKeyboardAvoidingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		792F18E571B8A163A0168BC626A98923 /* Pods-YellowPop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B72CD08A97B38444DA0D3C058FA40C2 /* Pods-YellowPop-dummy.m */; };
 		80ECF15DFEBF74FD197C023A171E3036 /* Pods-YellowPopUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C6844AAD5303F6AF164C4EA0C8106B /* Pods-YellowPopUITests-dummy.m */; };
+		8D03B18828420CEB1AAC782F4931390F /* TPKeyboardAvoidingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = DBE9516AC63E7D13D8D499B74E6477A7 /* TPKeyboardAvoidingScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A3C3E9197D86DCAA8235D79B6323F7F /* Pods-YellowPopUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B077A0595637A362BC09CFA35F353AB7 /* Pods-YellowPopUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA78E0E988D574CEE37FCA42264C67C9 /* TPKeyboardAvoidingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = FDA7540DAFBAEBD0F735F7BD3FE5CE4C /* TPKeyboardAvoidingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC716C5EF237628872E0EF9603C2615A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		BDA966955B27B10F39CCE309A29E9058 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD299429537EB2ADD7B2CEC541716456 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C6401BC56707BE5C970364B242A0280C /* TPKeyboardAvoidingCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DA452346951E7AFE04D3FA6DEEF215D /* TPKeyboardAvoidingCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB1A2FADEC5741FC66624D58E332C442 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 410310049D2E0760ECAD696C01BC6641 /* TPKeyboardAvoidingTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D6117929BAAA96B8DD94815C26436220 /* TPKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 380950A728ACD747B75C0DF83B78EDEE /* TPKeyboardAvoiding-dummy.m */; };
+		E71236D6AE7E140E6D031A03AFB72DCA /* Pods-YellowPop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 599E2B0AF582C5EC72BE33D6EB006AE6 /* Pods-YellowPop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD46BBBE4E0A7DC7408E937403377811 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,40 +34,57 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A3A3D5B0323353C4B391ECCE38395B48;
+			remoteGlobalIDString = 3C68FACAD0F3DF683630C8BBDDB635A2;
 			remoteInfo = "Pods-YellowPop";
 		};
 		BB0D7C94A0B7C56AFC02E7950359F541 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A3A3D5B0323353C4B391ECCE38395B48;
+			remoteGlobalIDString = 3C68FACAD0F3DF683630C8BBDDB635A2;
 			remoteInfo = "Pods-YellowPop";
+		};
+		E0017FEE5FE7579097DF9D6E56BD7DCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EA6468C97F9B16639DB5B2A99CEE025;
+			remoteInfo = TPKeyboardAvoiding;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0003369EB44EFCE71BF0BEB3AB6A5D89 /* Pods-YellowPopUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YellowPopUITests-resources.sh"; sourceTree = "<group>"; };
 		03D6EA2D832BCC41D8D9CF8724F94922 /* Pods-YellowPopUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YellowPopUITests.modulemap"; sourceTree = "<group>"; };
+		0924E4EDB10387E8DE44E82D2148B052 /* TPKeyboardAvoiding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-umbrella.h"; sourceTree = "<group>"; };
 		0D937B40E2899FF48ECE629B9AE8A10C /* Pods-YellowPopUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YellowPopUITests-frameworks.sh"; sourceTree = "<group>"; };
 		140A51560A99AAFA70858D1AECCAB7B0 /* Pods-YellowPop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YellowPop.debug.xcconfig"; sourceTree = "<group>"; };
 		1648B9560236212DD74A2C14C8768D4B /* Pods-YellowPopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YellowPopTests.release.xcconfig"; sourceTree = "<group>"; };
+		1D264E730630717681231D7572F7F953 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C6C388665612369BE4F38A146614F64 /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPKeyboardAvoiding.framework; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		380950A728ACD747B75C0DF83B78EDEE /* TPKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
+		410310049D2E0760ECAD696C01BC6641 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingTableView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
 		44656BF0D3012FB6AB0601CAC79279B6 /* Pods-YellowPopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YellowPopUITests.release.xcconfig"; sourceTree = "<group>"; };
 		44C6844AAD5303F6AF164C4EA0C8106B /* Pods-YellowPopUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YellowPopUITests-dummy.m"; sourceTree = "<group>"; };
 		4534FAAC4DFDBE2B8C291DCBBD68A561 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45CF0B2324DEE4A3D078CC54458FAD91 /* TPKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKeyboardAvoiding.xcconfig; sourceTree = "<group>"; };
 		4B72CD08A97B38444DA0D3C058FA40C2 /* Pods-YellowPop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YellowPop-dummy.m"; sourceTree = "<group>"; };
 		53A5AAFAA2897ECD9378787A32F3016A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		599E2B0AF582C5EC72BE33D6EB006AE6 /* Pods-YellowPop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YellowPop-umbrella.h"; sourceTree = "<group>"; };
 		5CAC44C4D4B9BAD897DD88A67E97B793 /* Pods-YellowPopTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YellowPopTests.modulemap"; sourceTree = "<group>"; };
 		62F5BF5E48F8262513588C5F5F7E25A3 /* Pods-YellowPopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YellowPopTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6814AF620C1DA0B641B91F9FDCF7680C /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		70B4E0D417A925B3B3CADE36D595B595 /* Pods-YellowPopTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YellowPopTests-frameworks.sh"; sourceTree = "<group>"; };
+		72893779A15F2B25FC4BD7C117238410 /* Pods_YellowPopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YellowPopTests.framework; path = "Pods-YellowPopTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E6F53493E771F67BD13D6FD40DC3E3 /* Pods-YellowPop-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YellowPop-frameworks.sh"; sourceTree = "<group>"; };
+		7585CE018D429CC0B8BCEC6FD085541B /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		7908E237BECDCFFE1BA6410482EF9F8C /* Pods-YellowPopTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YellowPopTests-resources.sh"; sourceTree = "<group>"; };
-		79BD99D211209BFC0EDAFC62AF04F88D /* Pods_YellowPopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YellowPopUITests.framework; path = "Pods-YellowPopUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B69F412503B197FBA40EB2472676629 /* Pods-YellowPopUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YellowPopUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DA452346951E7AFE04D3FA6DEEF215D /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		8FB72DCADB8197626D862162E7384F3D /* Pods_YellowPopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YellowPopUITests.framework; path = "Pods-YellowPopUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9BBDA3F0C41F1FDE94D096BBB265A6F6 /* Pods_YellowPopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YellowPopTests.framework; path = "Pods-YellowPopTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D44C762EDAD3DF30D7983E8714DD804 /* Pods-YellowPop-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YellowPop-acknowledgements.plist"; sourceTree = "<group>"; };
+		A405D45DEFE0A3D269C6622186C957E3 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
 		B077A0595637A362BC09CFA35F353AB7 /* Pods-YellowPopUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YellowPopUITests-umbrella.h"; sourceTree = "<group>"; };
 		B223C9AAEB1B45041A0B2486C245AEDA /* Pods-YellowPopUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YellowPopUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B6E90BF65CC86829CDBA3B6A3C54163A /* Pods-YellowPop-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YellowPop-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -67,10 +95,15 @@
 		D7E60AFEDA5E5C5DB15BF4E037DC37E2 /* Pods-YellowPopTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YellowPopTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		D893C374022D192D63752464288FB09F /* Pods-YellowPopTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YellowPopTests-umbrella.h"; sourceTree = "<group>"; };
 		DA649D7E3AB412193D193BAC360CCF3F /* Pods-YellowPop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YellowPop.release.xcconfig"; sourceTree = "<group>"; };
-		E202584EB941D290FEE6256C9DA1AC4D /* Pods_YellowPop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YellowPop.framework; path = "Pods-YellowPop.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBE9516AC63E7D13D8D499B74E6477A7 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		E4A72E6E82831F274B06E47A2878709E /* Pods_YellowPop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YellowPop.framework; path = "Pods-YellowPop.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4FC5FD08BB53E41ACE69246B423A348 /* Pods-YellowPop-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YellowPop-resources.sh"; sourceTree = "<group>"; };
 		E6533421923FC1DE5469B12F3B81B1FF /* Pods-YellowPopTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YellowPopTests-dummy.m"; sourceTree = "<group>"; };
 		EFFDE1203986193F469A00DCA4020E30 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD299429537EB2ADD7B2CEC541716456 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		FD4BE016D518A67CFA1743252951DD48 /* TPKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TPKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
+		FDA7540DAFBAEBD0F735F7BD3FE5CE4C /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingTableView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		FE2BA0AF60D6A4CE6C79B88A1955B92F /* TPKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,23 +123,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89549E849941E022D4833B0E5C36AFC7 /* Frameworks */ = {
+		81BFAB67292699752D7E822AFE95AE8C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BE4B3EE7BCBFC13C5377D2A0F6624AA /* Foundation.framework in Frameworks */,
+				FD46BBBE4E0A7DC7408E937403377811 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ACE640652F8E5E0D4C82016BEA4F933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D0C23493B5B6CEE4DDDB2DBAA53AD61 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26B02AB5A3C4CA59476EC03FD556F377 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2BF02B87387107CD7013346F91E0889 /* TPKeyboardAvoiding */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		44D5347904CF754D6785B84253F2574A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		48989DB08C44EDBFE80C1EE9FC30F481 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4A72E6E82831F274B06E47A2878709E /* Pods_YellowPop.framework */,
+				72893779A15F2B25FC4BD7C117238410 /* Pods_YellowPopTests.framework */,
+				8FB72DCADB8197626D862162E7384F3D /* Pods_YellowPopUITests.framework */,
+				2C6C388665612369BE4F38A146614F64 /* TPKeyboardAvoiding.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		4B204684D211EDD7EE270F3A1604858D /* Pods-YellowPopTests */ = {
@@ -150,7 +210,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C0B779F051020A695DA9BB1A33118846 /* Products */,
+				26B02AB5A3C4CA59476EC03FD556F377 /* Pods */,
+				48989DB08C44EDBFE80C1EE9FC30F481 /* Products */,
 				B77284C95DCCDAAD01FC1D9F93D00120 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -173,14 +234,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C0B779F051020A695DA9BB1A33118846 /* Products */ = {
+		C2BF02B87387107CD7013346F91E0889 /* TPKeyboardAvoiding */ = {
 			isa = PBXGroup;
 			children = (
-				E202584EB941D290FEE6256C9DA1AC4D /* Pods_YellowPop.framework */,
-				9BBDA3F0C41F1FDE94D096BBB265A6F6 /* Pods_YellowPopTests.framework */,
-				79BD99D211209BFC0EDAFC62AF04F88D /* Pods_YellowPopUITests.framework */,
+				8DA452346951E7AFE04D3FA6DEEF215D /* TPKeyboardAvoidingCollectionView.h */,
+				A405D45DEFE0A3D269C6622186C957E3 /* TPKeyboardAvoidingCollectionView.m */,
+				DBE9516AC63E7D13D8D499B74E6477A7 /* TPKeyboardAvoidingScrollView.h */,
+				6814AF620C1DA0B641B91F9FDCF7680C /* TPKeyboardAvoidingScrollView.m */,
+				FDA7540DAFBAEBD0F735F7BD3FE5CE4C /* TPKeyboardAvoidingTableView.h */,
+				410310049D2E0760ECAD696C01BC6641 /* TPKeyboardAvoidingTableView.m */,
+				7585CE018D429CC0B8BCEC6FD085541B /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				FD299429537EB2ADD7B2CEC541716456 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				D840444578A2E6B077F968D16FF87DBC /* Support Files */,
 			);
-			name = Products;
+			name = TPKeyboardAvoiding;
+			path = TPKeyboardAvoiding;
 			sourceTree = "<group>";
 		};
 		D386667DE0043E51262595784EEFF066 /* Pods-YellowPopUITests */ = {
@@ -201,6 +269,20 @@
 			path = "Target Support Files/Pods-YellowPopUITests";
 			sourceTree = "<group>";
 		};
+		D840444578A2E6B077F968D16FF87DBC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D264E730630717681231D7572F7F953 /* Info.plist */,
+				FD4BE016D518A67CFA1743252951DD48 /* TPKeyboardAvoiding.modulemap */,
+				45CF0B2324DEE4A3D078CC54458FAD91 /* TPKeyboardAvoiding.xcconfig */,
+				380950A728ACD747B75C0DF83B78EDEE /* TPKeyboardAvoiding-dummy.m */,
+				FE2BA0AF60D6A4CE6C79B88A1955B92F /* TPKeyboardAvoiding-prefix.pch */,
+				0924E4EDB10387E8DE44E82D2148B052 /* TPKeyboardAvoiding-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TPKeyboardAvoiding";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -212,6 +294,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22718B14DFFDA616EC3C30C24EDBE7B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21CE81EE6C06F2C20092F7579B7B3B5F /* TPKeyboardAvoiding-umbrella.h in Headers */,
+				C6401BC56707BE5C970364B242A0280C /* TPKeyboardAvoidingCollectionView.h in Headers */,
+				8D03B18828420CEB1AAC782F4931390F /* TPKeyboardAvoidingScrollView.h in Headers */,
+				BA78E0E988D574CEE37FCA42264C67C9 /* TPKeyboardAvoidingTableView.h in Headers */,
+				29CA9072A401A6E718AC1051CD7B478C /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3009B1649756BE66FF7ABA4478906AD6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,33 +314,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8E058B42EB7DF00DB52ADBA708F3EFDC /* Headers */ = {
+		84E5757BE6930FA757BF6D3C4E46AF62 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				332B3CBE25116CF12147D3BF07CCC8AB /* Pods-YellowPop-umbrella.h in Headers */,
+				E71236D6AE7E140E6D031A03AFB72DCA /* Pods-YellowPop-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A3A3D5B0323353C4B391ECCE38395B48 /* Pods-YellowPop */ = {
+		3C68FACAD0F3DF683630C8BBDDB635A2 /* Pods-YellowPop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A96662F6F1443BAE946FA278CFC9976 /* Build configuration list for PBXNativeTarget "Pods-YellowPop" */;
+			buildConfigurationList = 407F42418A23AE3CBB2DAC931E346252 /* Build configuration list for PBXNativeTarget "Pods-YellowPop" */;
 			buildPhases = (
-				8E058B42EB7DF00DB52ADBA708F3EFDC /* Headers */,
-				C0ED083CC89A5AFFC00883EE0C79FEE4 /* Sources */,
-				89549E849941E022D4833B0E5C36AFC7 /* Frameworks */,
-				1140AA55CD07E620537966D8024B0037 /* Resources */,
+				84E5757BE6930FA757BF6D3C4E46AF62 /* Headers */,
+				6907769C06EC801A76A40D238D1E9F65 /* Sources */,
+				81BFAB67292699752D7E822AFE95AE8C /* Frameworks */,
+				83DCAAE3A2797121D02CD570DBC744D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				560EAC0A2B0F5000D5A517D0170A7C27 /* PBXTargetDependency */,
+			);
+			name = "Pods-YellowPop";
+			productName = "Pods-YellowPop";
+			productReference = E4A72E6E82831F274B06E47A2878709E /* Pods_YellowPop.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9EA6468C97F9B16639DB5B2A99CEE025 /* TPKeyboardAvoiding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77A6E495C78C2763D55C36D3FF6D14C4 /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */;
+			buildPhases = (
+				22718B14DFFDA616EC3C30C24EDBE7B3 /* Headers */,
+				26E30A1CD72F5216949F6B85CD3EDD9A /* Sources */,
+				8ACE640652F8E5E0D4C82016BEA4F933 /* Frameworks */,
+				E4834E4288108B159644AD13B9513EA4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-YellowPop";
-			productName = "Pods-YellowPop";
-			productReference = E202584EB941D290FEE6256C9DA1AC4D /* Pods_YellowPop.framework */;
+			name = TPKeyboardAvoiding;
+			productName = TPKeyboardAvoiding;
+			productReference = 2C6C388665612369BE4F38A146614F64 /* TPKeyboardAvoiding.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D98EBACC0A78FA0B43C059BC5332A2F9 /* Pods-YellowPopTests */ = {
@@ -265,7 +378,7 @@
 			);
 			name = "Pods-YellowPopTests";
 			productName = "Pods-YellowPopTests";
-			productReference = 9BBDA3F0C41F1FDE94D096BBB265A6F6 /* Pods_YellowPopTests.framework */;
+			productReference = 72893779A15F2B25FC4BD7C117238410 /* Pods_YellowPopTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F8DE7CEB7A8467C6260AC2A701CDF5B2 /* Pods-YellowPopUITests */ = {
@@ -284,7 +397,7 @@
 			);
 			name = "Pods-YellowPopUITests";
 			productName = "Pods-YellowPopUITests";
-			productReference = 79BD99D211209BFC0EDAFC62AF04F88D /* Pods_YellowPopUITests.framework */;
+			productReference = 8FB72DCADB8197626D862162E7384F3D /* Pods_YellowPopUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -304,25 +417,19 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C0B779F051020A695DA9BB1A33118846 /* Products */;
+			productRefGroup = 48989DB08C44EDBFE80C1EE9FC30F481 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A3A3D5B0323353C4B391ECCE38395B48 /* Pods-YellowPop */,
+				3C68FACAD0F3DF683630C8BBDDB635A2 /* Pods-YellowPop */,
 				D98EBACC0A78FA0B43C059BC5332A2F9 /* Pods-YellowPopTests */,
 				F8DE7CEB7A8467C6260AC2A701CDF5B2 /* Pods-YellowPopUITests */,
+				9EA6468C97F9B16639DB5B2A99CEE025 /* TPKeyboardAvoiding */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1140AA55CD07E620537966D8024B0037 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5636D3593C69E69980D7226CC45148AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,7 +437,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83DCAAE3A2797121D02CD570DBC744D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD47095CAD3FDF9210BF681310F6676D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4834E4288108B159644AD13B9513EA4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -356,32 +477,85 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0ED083CC89A5AFFC00883EE0C79FEE4 /* Sources */ = {
+		26E30A1CD72F5216949F6B85CD3EDD9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64B2190AB6C63E93FF925D0C95F960FA /* Pods-YellowPop-dummy.m in Sources */,
+				D6117929BAAA96B8DD94815C26436220 /* TPKeyboardAvoiding-dummy.m in Sources */,
+				2022804A7E18DD58A57D748DD12ECA75 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				76554DCCBDA2E7CDA6C9838DB1013AA5 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				CB1A2FADEC5741FC66624D58E332C442 /* TPKeyboardAvoidingTableView.m in Sources */,
+				BDA966955B27B10F39CCE309A29E9058 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6907769C06EC801A76A40D238D1E9F65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792F18E571B8A163A0168BC626A98923 /* Pods-YellowPop-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		560EAC0A2B0F5000D5A517D0170A7C27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TPKeyboardAvoiding;
+			target = 9EA6468C97F9B16639DB5B2A99CEE025 /* TPKeyboardAvoiding */;
+			targetProxy = E0017FEE5FE7579097DF9D6E56BD7DCF /* PBXContainerItemProxy */;
+		};
 		FA3200A38E5938D3C18FD9874766F6CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-YellowPop";
-			target = A3A3D5B0323353C4B391ECCE38395B48 /* Pods-YellowPop */;
+			target = 3C68FACAD0F3DF683630C8BBDDB635A2 /* Pods-YellowPop */;
 			targetProxy = BB0D7C94A0B7C56AFC02E7950359F541 /* PBXContainerItemProxy */;
 		};
 		FD39CFC361D53B83DAC3565C048563C2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-YellowPop";
-			target = A3A3D5B0323353C4B391ECCE38395B48 /* Pods-YellowPop */;
+			target = 3C68FACAD0F3DF683630C8BBDDB635A2 /* Pods-YellowPop */;
 			targetProxy = 69F274D3BE9E36F93FE13920F1F8083C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0229D727C65DA3B8BDF8D9D6F53621DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45CF0B2324DEE4A3D078CC54458FAD91 /* TPKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				PRODUCT_MODULE_NAME = TPKeyboardAvoiding;
+				PRODUCT_NAME = TPKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		4418EFC0DB78DD8363C13209343159F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1648B9560236212DD74A2C14C8768D4B /* Pods-YellowPopTests.release.xcconfig */;
@@ -420,44 +594,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		72254C0F9AC87571CAB111BCA1C2747F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 140A51560A99AAFA70858D1AECCAB7B0 /* Pods-YellowPop.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-YellowPop/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-YellowPop/Pods-YellowPop.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		7D2C9A73F3E7441C70E7AADFC6A5E871 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -602,6 +738,44 @@
 			};
 			name = Release;
 		};
+		88ADB5F0A64684B0483DA400B456569B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 140A51560A99AAFA70858D1AECCAB7B0 /* Pods-YellowPop.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YellowPop/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YellowPop/Pods-YellowPop.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		8FEE6659AD326E4C140BC5B20EC12CF0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -664,7 +838,7 @@
 			};
 			name = Release;
 		};
-		AAE657A54181D8109036BF825F19FBC2 /* Release */ = {
+		CD30F1FD5495F46BB388FF37FFF02E63 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DA649D7E3AB412193D193BAC360CCF3F /* Pods-YellowPop.release.xcconfig */;
 			buildSettings = {
@@ -696,6 +870,42 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DEC0EFE8AE2E0AF4894C87CCCD22C413 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45CF0B2324DEE4A3D078CC54458FAD91 /* TPKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				PRODUCT_MODULE_NAME = TPKeyboardAvoiding;
+				PRODUCT_NAME = TPKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -753,11 +963,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A96662F6F1443BAE946FA278CFC9976 /* Build configuration list for PBXNativeTarget "Pods-YellowPop" */ = {
+		407F42418A23AE3CBB2DAC931E346252 /* Build configuration list for PBXNativeTarget "Pods-YellowPop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				72254C0F9AC87571CAB111BCA1C2747F /* Debug */,
-				AAE657A54181D8109036BF825F19FBC2 /* Release */,
+				88ADB5F0A64684B0483DA400B456569B /* Debug */,
+				CD30F1FD5495F46BB388FF37FFF02E63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77A6E495C78C2763D55C36D3FF6D14C4 /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0229D727C65DA3B8BDF8D9D6F53621DD /* Debug */,
+				DEC0EFE8AE2E0AF4894C87CCCD22C413 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
