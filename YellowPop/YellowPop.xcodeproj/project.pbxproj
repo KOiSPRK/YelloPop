@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		57C6A1B0AA4929E839F62617 /* Pods_YellowPop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BC470A0F16583E23E85902 /* Pods_YellowPop.framework */; };
 		8DE48760849E188A729EF8A9 /* Pods_YellowPopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DFE91EB8826F5F99164634 /* Pods_YellowPopTests.framework */; };
+		B209884423668D0000C17985 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DED1842363D97C004DE2BB /* ViewController.swift */; };
+		B22CD781236685F300551B8C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22CD780236685F200551B8C /* BaseViewController.swift */; };
 		B251E9992363E48F00B71215 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B251E9982363E48F00B71215 /* UIButtonExtension.swift */; };
 		B251E99D2363E75800B71215 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B251E99C2363E75800B71215 /* HistoryViewController.swift */; };
 		B27838A22365E4C800CC2D61 /* PrimeLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27838A12365E4C800CC2D61 /* PrimeLogic.swift */; };
@@ -21,7 +23,6 @@
 		B2B19E3B23654467000C1881 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B19E3923654467000C1881 /* DataExtension.swift */; };
 		B2DED1812363D97C004DE2BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DED1802363D97C004DE2BB /* AppDelegate.swift */; };
 		B2DED1832363D97C004DE2BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DED1822363D97C004DE2BB /* SceneDelegate.swift */; };
-		B2DED1852363D97C004DE2BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DED1842363D97C004DE2BB /* ViewController.swift */; };
 		B2DED1882363D97C004DE2BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DED1862363D97C004DE2BB /* Main.storyboard */; };
 		B2DED18A2363D97D004DE2BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DED1892363D97D004DE2BB /* Assets.xcassets */; };
 		B2DED18D2363D97D004DE2BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DED18B2363D97D004DE2BB /* LaunchScreen.storyboard */; };
@@ -119,6 +120,7 @@
 		10BC470A0F16583E23E85902 /* Pods_YellowPop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YellowPop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A3A9E1AE2F7E70F5008AAB /* Pods-YellowPopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowPopTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YellowPopTests/Pods-YellowPopTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B6D1E8D818DB1E9957FD048 /* Pods_YellowPopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YellowPopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B22CD780236685F200551B8C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B251E9982363E48F00B71215 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		B251E99C2363E75800B71215 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		B27838A12365E4C800CC2D61 /* PrimeLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeLogic.swift; sourceTree = "<group>"; };
@@ -235,6 +237,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B209884323668CEC00C17985 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		B251E9972363E46C00B71215 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				B2DED18E2363D97D004DE2BB /* Info.plist */,
+				B209884323668CEC00C17985 /* Frameworks */,
 				B2DED1F62363DEF6004DE2BB /* Resources */,
 				B2DED1F52363DEEE004DE2BB /* Core */,
 				B251E9972363E46C00B71215 /* Extensions */,
@@ -385,6 +395,7 @@
 		B2DED1F92363DF6D004DE2BB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B22CD780236685F200551B8C /* BaseViewController.swift */,
 				B2DED1842363D97C004DE2BB /* ViewController.swift */,
 				B251E99C2363E75800B71215 /* HistoryViewController.swift */,
 			);
@@ -720,20 +731,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-YellowPop/Pods-YellowPop-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-YellowPop/Pods-YellowPop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-YellowPop/Pods-YellowPop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YellowPop/Pods-YellowPop-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YellowPop/Pods-YellowPop-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		70EDFC68B80E99953B5D1305 /* [CP] Check Pods Manifest.lock */ = {
@@ -788,11 +794,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B251E9992363E48F00B71215 /* UIButtonExtension.swift in Sources */,
-				B2DED1852363D97C004DE2BB /* ViewController.swift in Sources */,
 				B27838A82365EAD200CC2D61 /* History.swift in Sources */,
 				B2DED1812363D97C004DE2BB /* AppDelegate.swift in Sources */,
 				B251E99D2363E75800B71215 /* HistoryViewController.swift in Sources */,
+				B22CD781236685F300551B8C /* BaseViewController.swift in Sources */,
 				B2DED1832363D97C004DE2BB /* SceneDelegate.swift in Sources */,
+				B209884423668D0000C17985 /* ViewController.swift in Sources */,
 				B27838A62365E93800CC2D61 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1036,6 +1043,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E47UGP5L2T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/YellowPop/Frameworks",
+				);
 				INFOPLIST_FILE = YellowPop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1056,6 +1068,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E47UGP5L2T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/YellowPop/Frameworks",
+				);
 				INFOPLIST_FILE = YellowPop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

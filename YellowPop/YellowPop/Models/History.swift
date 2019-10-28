@@ -8,13 +8,13 @@
 
 import UIKit
 
-class History: NSObject {
+struct History {
 
     var desc:String?
     var number:UInt?
     
     init(with number:UInt, desc:String) {
-        super.init()
+//        super.init()
         self.number = number
         self.desc = desc
     }

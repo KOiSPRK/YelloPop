@@ -22,7 +22,7 @@ struct Parse {
         do {
             guard let json = try data.jsonObject(),
                 let number = Parse.jsonGenericObject(with: json, type: Number.self) else {
-                return Number()
+                return nil
             }
             return number
 

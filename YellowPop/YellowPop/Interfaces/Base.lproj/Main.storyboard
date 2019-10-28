@@ -105,6 +105,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lHs-gN-udJ" secondAttribute="trailing" constant="20" id="4qB-QS-wS6"/>
                             <constraint firstItem="bmg-y9-2PF" firstAttribute="top" secondItem="lHs-gN-udJ" secondAttribute="bottom" constant="70" id="TqH-SD-ptv"/>
@@ -132,14 +133,33 @@
                     <view key="view" contentMode="scaleToFill" id="KGc-lI-Mec">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Be-Fl-yZZ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cdb-jl-1q2" id="dNh-Tr-P26"/>
+                                    <outlet property="delegate" destination="cdb-jl-1q2" id="Epx-yO-Ttz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Be-Fl-yZZ" firstAttribute="top" secondItem="vNN-Dk-wlq" secondAttribute="top" id="1eb-FN-hvg"/>
+                            <constraint firstItem="6Be-Fl-yZZ" firstAttribute="leading" secondItem="vNN-Dk-wlq" secondAttribute="leading" id="P8i-0j-ogN"/>
+                            <constraint firstItem="6Be-Fl-yZZ" firstAttribute="bottom" secondItem="vNN-Dk-wlq" secondAttribute="bottom" id="n5a-h7-2KO"/>
+                            <constraint firstItem="6Be-Fl-yZZ" firstAttribute="trailing" secondItem="vNN-Dk-wlq" secondAttribute="trailing" id="sLQ-3i-B4Y"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vNN-Dk-wlq"/>
                     </view>
                     <navigationItem key="navigationItem" title="History" id="KFc-uB-37s"/>
+                    <connections>
+                        <outlet property="tableView" destination="6Be-Fl-yZZ" id="DnD-vD-nbI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PTJ-7l-ewd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="174" y="53"/>
+            <point key="canvasLocation" x="173.91304347826087" y="52.901785714285715"/>
         </scene>
     </scenes>
 </document>

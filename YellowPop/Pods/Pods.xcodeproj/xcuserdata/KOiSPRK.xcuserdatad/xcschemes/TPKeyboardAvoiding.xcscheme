@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9EA6468C97F9B16639DB5B2A99CEE025"
+               BlueprintIdentifier = "1343042EDCB23E2CA267E65C520F9395"
+               BuildableName = "TPKeyboardAvoiding.framework"
                BlueprintName = "TPKeyboardAvoiding"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "TPKeyboardAvoiding.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import APIService
 
 class ViewModel: NSObject {
 
@@ -21,4 +22,9 @@ class ViewModel: NSObject {
         self.history.append(History(with: value, desc: desc))
     }
     
+    func getNumberInfo(with value:UInt, completion: @escaping (Number, Error?) -> ()) {
+        APIService.getNumberInfo(with: value) { (number, error) in
+            completion(number, error)
+        }
+    }
 }
