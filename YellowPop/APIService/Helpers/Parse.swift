@@ -17,22 +17,29 @@ struct Parse {
         }
         return result
     }
+
+}
+
+extension Parse {
     
-    static func parseJSON(from data: Data) -> Number? {
+    static func parseJSONNumber(from data: Data?, completion: @escaping CompletionBlock) {
         do {
-            guard let json = try data.jsonObject(),
+            guard let data = data, let json = try data.jsonObject(),
                 let number = Parse.jsonGenericObject(with: json, type: Number.self) else {
-                return nil
+                    completion(nil, ApplicationError.parsingError)
+                    return
             }
-            return number
+            completion(number, nil)
+            return
 
         } catch {
-            print("Couldn't parse JSON: \(error)")
-            if let utf8String = String(data: data, encoding: String.Encoding.utf8) {
-                print("Received: \(utf8String)")
+            if let data = data, let err = String(data: data, encoding: String.Encoding.utf8) {
+                completion(nil, ApplicationError.custom(message: err))
+                return
             }
         }
-
-        return nil
+        completion(nil, ApplicationError.unknowError)
+        return
     }
+    
 }

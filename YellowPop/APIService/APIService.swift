@@ -8,20 +8,26 @@
 
 import Foundation
 
+public typealias CompletionBlock = (Number?, ApplicationError?) -> ()
+
 public class APIService: NSObject {
 
-    public static func getNumberInfo(with value:UInt, completion: @escaping (Number, Error?) -> ()) {
+    public static func getNumberInfo(with value:UInt, completion: @escaping CompletionBlock) {
         let fullURL:String = "http://numbersapi.com/\(value)?json"
 
         guard let url = URL(string: fullURL) else {
+            completion(nil, ApplicationError.invalidUrl)
             return
         }
         print(url.absoluteString)
         let task = URLSession.shared.dataTask(with: url) {data, response, error in
-            guard let data = data, let result = Parse.parseJSON(from: data) else {
-                return
+            Parse.parseJSONNumber(from: data) { (number, error) in
+                guard error == nil else {
+                    completion(nil, error)
+                    return
+                }
+                completion(number, nil)
             }
-            return completion(result, error)
         }
         task.resume()
         return

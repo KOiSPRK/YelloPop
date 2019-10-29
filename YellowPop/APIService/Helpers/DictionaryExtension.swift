@@ -8,8 +8,6 @@
 
 import Foundation
 
-typealias JSONDict = [String: Any]
-
 extension Dictionary {
     
     func data(option: JSONSerialization.WritingOptions = .prettyPrinted) throws -> Data {

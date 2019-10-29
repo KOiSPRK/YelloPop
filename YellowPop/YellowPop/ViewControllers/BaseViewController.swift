@@ -8,6 +8,7 @@
 
 import UIKit
 import MBProgressHUD
+import AZDialogView
 
 class BaseViewController: UIViewController {
 
@@ -43,24 +44,24 @@ class BaseViewController: UIViewController {
         }
     }
 
-    @objc func dismissAlertController(){
-        self.alertController?.dismiss(animated: true, completion: nil)
-    }
-    
     func showDialog(title:String, message:String) {
         DispatchQueue.main.async {
-            let blurEffect = UIBlurEffect(style: .systemUltraThinMaterialLight)
-            let effectView = UIVisualEffectView(effect: blurEffect)
-            effectView.alpha = 0.3
-            effectView.frame = self.view.bounds
-
-            self.alertController = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
-            self.view.addSubview(effectView)
-            self.present(self.alertController!, animated: true, completion: nil)
-            
-//            self.present(self.alertController!, animated: true, completion: {() -> Void in
-//               self.alertController?.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissAlertController)))
-//           })
+            let dialog = AZDialogViewController(title: title, message: message)
+            dialog.blurBackground = false
+            dialog.dismissWithOutsideTouch = true
+            dialog.show(in: self)
+        }
+    }
+    
+    func showError(title:String = "Error", error:String?) {
+        DispatchQueue.main.async {
+            let dialog = AZDialogViewController(title: title, message: error ?? "Unknown Error")
+            dialog.blurBackground = false
+            dialog.dismissWithOutsideTouch = true
+            dialog.addAction(AZDialogAction(title: "Ok") { (dialog) -> (Void) in
+                dialog.dismiss()
+            })
+            dialog.show(in: self)
         }
     }
 

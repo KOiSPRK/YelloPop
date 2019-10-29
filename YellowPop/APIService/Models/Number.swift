@@ -28,7 +28,6 @@ public class Number: NSObject, Decodable {
     
     required public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-//        try super.init(from: decoder)
         self.text = try? container.decode(String.self, forKey: .text)
         self.number = try? container.decode(Int.self, forKey: .number)
         self.found = try? container.decode(Bool.self, forKey: .found)

@@ -10,6 +10,7 @@ import UIKit
 import Logic
 import APIService
 
+
 class ViewController: BaseViewController {
 
     let viewModel = ViewModel()
@@ -46,11 +47,17 @@ class ViewController: BaseViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.textField.text = ""
+        self.resetView()
     }
     
     // MARK: Private
     
+    fileprivate func resetView() {
+        self.textField.text = ""
+        self.textField.resignFirstResponder()
+        self.resultButton.isHidden = true
+    }
+     
     fileprivate func updateResultButtonState(with isPrime: Bool) {
         DispatchQueue.main.async {
             self.resultButton.isHidden = false
@@ -74,9 +81,10 @@ class ViewController: BaseViewController {
     
     @IBAction func didTapSubmitButton(_ sender: UIButton) {
         guard let value = self.textField.text, let uintValue = UInt(value),
+            !value.isEmpty && value.rangeOfCharacter(from: NSCharacterSet.decimalDigits) != nil,
             let isPrime = PrimeLogic.isPrime(with: uintValue) else {
                 self.resultButton.isHidden = true
-                print("Invalid value")
+                self.showError(title: "Invalid Input", error: "Please enter a valid number")
             return
         }
         self.textField.resignFirstResponder()
@@ -86,18 +94,24 @@ class ViewController: BaseViewController {
     
     @IBAction func didTapResultButton(_ sender: UIButton) {
         guard let last = self.viewModel.history.last, let value = last.number else {
-            print("Invalid")
+            self.showError(error: "Cound't find any history")
             return
         }
         self.showLoading()
         self.viewModel.getNumberInfo(with: value) { (number, error) in
             self.hideLoading()
-            guard let msg = number.text, !msg.isEmpty, let value = number.number else {
+            guard error == nil else {
+                self.showError(error: error?.message)
                 return
             }
-            print(msg)
-            self.showDialog(title: "The importance of \(value)", message: msg)
+            guard let number = number, let message = number.text, !message.isEmpty, let value = number.number else {
+                self.showError(error: "Invalid Data")
+                return
+            }
+            print(message)
+            self.showDialog(title: "The importance of \(value)", message: message)
         }
+        
     }
     
     // MARK: TextField
@@ -111,4 +125,3 @@ class ViewController: BaseViewController {
     }
     
 }
-

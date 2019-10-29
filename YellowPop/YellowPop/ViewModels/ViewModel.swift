@@ -22,7 +22,7 @@ class ViewModel: NSObject {
         self.history.append(History(with: value, desc: desc))
     }
     
-    func getNumberInfo(with value:UInt, completion: @escaping (Number, Error?) -> ()) {
+    func getNumberInfo(with value:UInt, completion: @escaping CompletionBlock) {
         APIService.getNumberInfo(with: value) { (number, error) in
             completion(number, error)
         }
