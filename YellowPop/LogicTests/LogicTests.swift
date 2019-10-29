@@ -19,9 +19,23 @@ class LogicTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testPrimeLogic() {
+        let value:Int = 50
+        
+        XCTAssertTrue(value > 1, "Prime Number must be greater than 1")
+        XCTAssertEqual(isPrime(with: value), PrimeLogic.isPrime(with: value))
+    }
+    
+    func isPrime(with value:Int) -> Bool {
+        guard value > 1 else {
+            return false
+        }
+        for i in 2..<value {
+            if value % i == 0 {
+                return false
+            }
+        }
+        return true
     }
 
     func testPerformanceExample() {

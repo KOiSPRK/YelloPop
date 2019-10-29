@@ -11,9 +11,9 @@ import UIKit
 class History: NSObject {
 
     var desc:String?
-    var number:UInt?
+    var number:Int?
     
-    init(with number:UInt, desc:String) {
+    init(with number:Int, desc:String) {
         self.number = number
         self.desc = desc
     }

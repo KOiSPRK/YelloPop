@@ -12,7 +12,7 @@ public typealias CompletionBlock = (Number?, ApplicationError?) -> ()
 
 public class APIService: NSObject {
 
-    public static func getNumberInfo(with value:UInt, completion: @escaping CompletionBlock) {
+    public static func getNumberInfo(with value:Int, completion: @escaping CompletionBlock) {
         let fullURL:String = "http://numbersapi.com/\(value)?json"
 
         guard let url = URL(string: fullURL) else {

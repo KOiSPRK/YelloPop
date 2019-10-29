@@ -17,12 +17,12 @@ class ViewModel: NSObject {
         super.init()
     }
 
-    func append(with value:UInt, isPrime:Bool) {
+    func append(with value:Int, isPrime:Bool) {
         let desc = "\(value) is \(isPrime ? "" : "Not ")Prime"
         self.history.append(History(with: value, desc: desc))
     }
     
-    func getNumberInfo(with value:UInt, completion: @escaping CompletionBlock) {
+    func getNumberInfo(with value:Int, completion: @escaping CompletionBlock) {
         APIService.getNumberInfo(with: value) { (number, error) in
             completion(number, error)
         }

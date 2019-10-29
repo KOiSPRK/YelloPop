@@ -10,7 +10,6 @@ import UIKit
 import Logic
 import APIService
 
-
 class ViewController: BaseViewController {
 
     let viewModel = ViewModel()
@@ -80,15 +79,20 @@ class ViewController: BaseViewController {
     // MARK: Actions
     
     @IBAction func didTapSubmitButton(_ sender: UIButton) {
-        guard let value = self.textField.text, let uintValue = UInt(value),
+        guard let value = self.textField.text, let intValue = Int(value),
             !value.isEmpty && value.rangeOfCharacter(from: NSCharacterSet.decimalDigits) != nil,
-            let isPrime = PrimeLogic.isPrime(with: uintValue) else {
+            let isPrime = PrimeLogic.isPrime(with: intValue) else {
                 self.resultButton.isHidden = true
                 self.showError(title: "Invalid Input", error: "Please enter a valid number")
             return
         }
+        guard intValue > 1 else {
+            self.showError(title: "Invalid Input", error: "Prime Number must be greater than 1")
+            return
+        }
+            
         self.textField.resignFirstResponder()
-        self.viewModel.append(with: uintValue, isPrime: isPrime)
+        self.viewModel.append(with: intValue, isPrime: isPrime)
         self.updateResultButtonState(with: isPrime)
     }
     

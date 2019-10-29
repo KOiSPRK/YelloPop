@@ -10,18 +10,16 @@ import Foundation
 
 public class PrimeLogic: NSObject {
 
-    public static func isPrime(with value:UInt) -> Bool? {
-        switch value {
-            case 0, 1:  return false
-            case 2, 3:  return true
-            default:
-                for i in 2...UInt(sqrt(Double(value))) {
-                    if value % i == 0 {
-                        return false
-                    }
-                }
-                return true
+    public static func isPrime(with value:Int) -> Bool? {
+        guard value > 1 else {
+            return false
+        }
+        for i in 2..<value {
+            if value % i == 0 {
+                return false
             }
+        }
+        return true 
     }
     
 }
