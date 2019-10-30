@@ -3,15 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		57C6A1B0AA4929E839F62617 /* Pods_YellowPop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BC470A0F16583E23E85902 /* Pods_YellowPop.framework */; };
 		8DE48760849E188A729EF8A9 /* Pods_YellowPopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DFE91EB8826F5F99164634 /* Pods_YellowPopTests.framework */; };
+		B209884423668D0000C17985 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DED1842363D97C004DE2BB /* ViewController.swift */; };
+		B22CD781236685F300551B8C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22CD780236685F200551B8C /* BaseViewController.swift */; };
+		B251E9992363E48F00B71215 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B251E9982363E48F00B71215 /* UIButtonExtension.swift */; };
+		B251E99D2363E75800B71215 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B251E99C2363E75800B71215 /* HistoryViewController.swift */; };
+		B27838A22365E4C800CC2D61 /* PrimeLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27838A12365E4C800CC2D61 /* PrimeLogic.swift */; };
+		B27838A42365E7E500CC2D61 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B19E3D23654800000C1881 /* Number.swift */; };
+		B27838A62365E93800CC2D61 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27838A52365E93800CC2D61 /* ViewModel.swift */; };
+		B27838A82365EAD200CC2D61 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27838A72365EAD200CC2D61 /* History.swift */; };
+		B286C3AD2369492800D6BAAC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B286C3AC2369492800D6BAAC /* Constant.swift */; };
+		B29AA9252367FBC900302CF4 /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29AA9212367EB6300302CF4 /* ApplicationError.swift */; };
+		B2B19E3523654416000C1881 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B19E3423654416000C1881 /* APIService.swift */; };
+		B2B19E372365443B000C1881 /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B19E362365443B000C1881 /* Parse.swift */; };
+		B2B19E3A23654467000C1881 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B19E3823654467000C1881 /* DictionaryExtension.swift */; };
+		B2B19E3B23654467000C1881 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B19E3923654467000C1881 /* DataExtension.swift */; };
 		B2DED1812363D97C004DE2BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DED1802363D97C004DE2BB /* AppDelegate.swift */; };
 		B2DED1832363D97C004DE2BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DED1822363D97C004DE2BB /* SceneDelegate.swift */; };
-		B2DED1852363D97C004DE2BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DED1842363D97C004DE2BB /* ViewController.swift */; };
 		B2DED1882363D97C004DE2BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DED1862363D97C004DE2BB /* Main.storyboard */; };
 		B2DED18A2363D97D004DE2BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DED1892363D97D004DE2BB /* Assets.xcassets */; };
 		B2DED18D2363D97D004DE2BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DED18B2363D97D004DE2BB /* LaunchScreen.storyboard */; };
@@ -27,7 +40,6 @@
 		B2DED1EA2363DEB2004DE2BB /* Logic.h in Headers */ = {isa = PBXBuildFile; fileRef = B2DED1DA2363DEB2004DE2BB /* Logic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2DED1ED2363DEB2004DE2BB /* Logic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DED1D82363DEB2004DE2BB /* Logic.framework */; };
 		B2DED1EE2363DEB2004DE2BB /* Logic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2DED1D82363DEB2004DE2BB /* Logic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B2DED1FD2363E0E2004DE2BB /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DED1FC2363E0E2004DE2BB /* History.swift */; };
 		D009DAB3A1158C27705078F8 /* Pods_YellowPopUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6D1E8D818DB1E9957FD048 /* Pods_YellowPopUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +122,19 @@
 		10BC470A0F16583E23E85902 /* Pods_YellowPop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YellowPop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A3A9E1AE2F7E70F5008AAB /* Pods-YellowPopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowPopTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YellowPopTests/Pods-YellowPopTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B6D1E8D818DB1E9957FD048 /* Pods_YellowPopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YellowPopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B22CD780236685F200551B8C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B251E9982363E48F00B71215 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		B251E99C2363E75800B71215 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		B27838A12365E4C800CC2D61 /* PrimeLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeLogic.swift; sourceTree = "<group>"; };
+		B27838A52365E93800CC2D61 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		B27838A72365EAD200CC2D61 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		B286C3AC2369492800D6BAAC /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		B29AA9212367EB6300302CF4 /* ApplicationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationError.swift; sourceTree = "<group>"; };
+		B2B19E3423654416000C1881 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		B2B19E362365443B000C1881 /* Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parse.swift; sourceTree = "<group>"; };
+		B2B19E3823654467000C1881 /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		B2B19E3923654467000C1881 /* DataExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		B2B19E3D23654800000C1881 /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
 		B2DED17D2363D97C004DE2BB /* YellowPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YellowPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DED1802363D97C004DE2BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2DED1822363D97C004DE2BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,7 +161,6 @@
 		B2DED1E02363DEB2004DE2BB /* LogicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DED1E72363DEB2004DE2BB /* LogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicTests.swift; sourceTree = "<group>"; };
 		B2DED1E92363DEB2004DE2BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2DED1FC2363E0E2004DE2BB /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		C8A7B1D1126605F049E19747 /* Pods-YellowPop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowPop.release.xcconfig"; path = "Pods/Target Support Files/Pods-YellowPop/Pods-YellowPop.release.xcconfig"; sourceTree = "<group>"; };
 		D11618DEAB51191B0D5B3042 /* Pods-YellowPopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowPopUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YellowPopUITests/Pods-YellowPopUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D4C1AFEA967DEA59133DEE91 /* Pods-YellowPop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YellowPop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YellowPop/Pods-YellowPop.debug.xcconfig"; sourceTree = "<group>"; };
@@ -217,6 +241,40 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B251E9972363E46C00B71215 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B251E9982363E48F00B71215 /* UIButtonExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B286C3AB2369491200D6BAAC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B286C3AC2369492800D6BAAC /* Constant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B29AA92623680B4300302CF4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2B19E3D23654800000C1881 /* Number.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B2B19E3C23654469000C1881 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B2B19E362365443B000C1881 /* Parse.swift */,
+				B2B19E3923654467000C1881 /* DataExtension.swift */,
+				B2B19E3823654467000C1881 /* DictionaryExtension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		B2DED1742363D97C004DE2BB = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +311,8 @@
 				B2DED18E2363D97D004DE2BB /* Info.plist */,
 				B2DED1F62363DEF6004DE2BB /* Resources */,
 				B2DED1F52363DEEE004DE2BB /* Core */,
+				B286C3AB2369491200D6BAAC /* Constants */,
+				B251E9972363E46C00B71215 /* Extensions */,
 				B2DED1FB2363DF83004DE2BB /* Models */,
 				B2DED1FA2363DF7A004DE2BB /* ViewModels */,
 				B2DED1F92363DF6D004DE2BB /* ViewControllers */,
@@ -283,6 +343,10 @@
 			isa = PBXGroup;
 			children = (
 				B2DED1B72363DE80004DE2BB /* APIService.h */,
+				B29AA9212367EB6300302CF4 /* ApplicationError.swift */,
+				B2B19E3423654416000C1881 /* APIService.swift */,
+				B29AA92623680B4300302CF4 /* Models */,
+				B2B19E3C23654469000C1881 /* Helpers */,
 				B2DED1B82363DE80004DE2BB /* Info.plist */,
 			);
 			path = APIService;
@@ -301,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				B2DED1DA2363DEB2004DE2BB /* Logic.h */,
+				B27838A12365E4C800CC2D61 /* PrimeLogic.swift */,
 				B2DED1DB2363DEB2004DE2BB /* Info.plist */,
 			);
 			path = Logic;
@@ -344,7 +409,9 @@
 		B2DED1F92363DF6D004DE2BB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B22CD780236685F200551B8C /* BaseViewController.swift */,
 				B2DED1842363D97C004DE2BB /* ViewController.swift */,
+				B251E99C2363E75800B71215 /* HistoryViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -352,6 +419,7 @@
 		B2DED1FA2363DF7A004DE2BB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B27838A52365E93800CC2D61 /* ViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -359,7 +427,7 @@
 		B2DED1FB2363DF83004DE2BB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B2DED1FC2363E0E2004DE2BB /* History.swift */,
+				B27838A72365EAD200CC2D61 /* History.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -405,6 +473,7 @@
 				B2DED17A2363D97C004DE2BB /* Frameworks */,
 				B2DED17B2363D97C004DE2BB /* Resources */,
 				B2DED1CC2363DE80004DE2BB /* Embed Frameworks */,
+				3E86A2833643FB4D664C92FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -552,6 +621,7 @@
 					};
 					B2DED1B42363DE80004DE2BB = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 					B2DED1BC2363DE80004DE2BB = {
 						CreatedOnToolsVersion = 11.1;
@@ -559,6 +629,7 @@
 					};
 					B2DED1D72363DEB2004DE2BB = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 					B2DED1DF2363DEB2004DE2BB = {
 						CreatedOnToolsVersion = 11.1;
@@ -668,6 +739,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3E86A2833643FB4D664C92FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YellowPop/Pods-YellowPop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YellowPop/Pods-YellowPop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YellowPop/Pods-YellowPop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		70EDFC68B80E99953B5D1305 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -719,10 +807,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2DED1852363D97C004DE2BB /* ViewController.swift in Sources */,
+				B251E9992363E48F00B71215 /* UIButtonExtension.swift in Sources */,
+				B27838A82365EAD200CC2D61 /* History.swift in Sources */,
+				B286C3AD2369492800D6BAAC /* Constant.swift in Sources */,
 				B2DED1812363D97C004DE2BB /* AppDelegate.swift in Sources */,
-				B2DED1FD2363E0E2004DE2BB /* History.swift in Sources */,
+				B251E99D2363E75800B71215 /* HistoryViewController.swift in Sources */,
+				B22CD781236685F300551B8C /* BaseViewController.swift in Sources */,
 				B2DED1832363D97C004DE2BB /* SceneDelegate.swift in Sources */,
+				B209884423668D0000C17985 /* ViewController.swift in Sources */,
+				B27838A62365E93800CC2D61 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -746,6 +839,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B27838A42365E7E500CC2D61 /* Number.swift in Sources */,
+				B2B19E3A23654467000C1881 /* DictionaryExtension.swift in Sources */,
+				B2B19E3B23654467000C1881 /* DataExtension.swift in Sources */,
+				B2B19E3523654416000C1881 /* APIService.swift in Sources */,
+				B2B19E372365443B000C1881 /* Parse.swift in Sources */,
+				B29AA9252367FBC900302CF4 /* ApplicationError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,6 +860,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B27838A22365E4C800CC2D61 /* PrimeLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -955,9 +1055,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D4C1AFEA967DEA59133DEE91 /* Pods-YellowPop.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E47UGP5L2T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/YellowPop/Frameworks",
+				);
 				INFOPLIST_FILE = YellowPop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -974,9 +1080,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C8A7B1D1126605F049E19747 /* Pods-YellowPop.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E47UGP5L2T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/YellowPop/Frameworks",
+				);
 				INFOPLIST_FILE = YellowPop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1080,6 +1192,7 @@
 		B2DED1CD2363DE80004DE2BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1097,6 +1210,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.koisprk.APIService;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1107,6 +1221,7 @@
 		B2DED1CE2363DE80004DE2BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1174,6 +1289,7 @@
 		B2DED1F02363DEB2004DE2BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1191,6 +1307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.koisprk.Logic;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1201,6 +1318,7 @@
 		B2DED1F12363DEB2004DE2BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A3A3D5B0323353C4B391ECCE38395B48"
+               BlueprintIdentifier = "AE0F6EC0738872F2693E4D2F938B4D4F"
                BuildableName = "Pods_YellowPop.framework"
                BlueprintName = "Pods-YellowPop"
                ReferencedContainer = "container:Pods.xcodeproj">

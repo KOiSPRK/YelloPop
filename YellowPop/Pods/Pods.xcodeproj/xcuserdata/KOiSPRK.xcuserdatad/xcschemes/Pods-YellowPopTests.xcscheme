@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D98EBACC0A78FA0B43C059BC5332A2F9"
+               BlueprintIdentifier = "8CA93CB43F891A75E2EF22C1E96192B7"
                BuildableName = "Pods_YellowPopTests.framework"
                BlueprintName = "Pods-YellowPopTests"
                ReferencedContainer = "container:Pods.xcodeproj">
