@@ -18,7 +18,7 @@ class HistoryViewController: BaseViewController {
     }
     
     override func configure() {
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: Constant.cell)
         self.tableView.tableFooterView = UIView()
     }
     
@@ -37,12 +37,12 @@ extension HistoryViewController: UITableViewDelegate {
 extension HistoryViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.viewModel?.history.count ?? 0
+        return self.viewModel?.getHistoryTotal() ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = self.viewModel?.history[indexPath.row].desc
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constant.cell, for: indexPath)
+        cell.textLabel?.text = self.viewModel?.getHistory()[indexPath.row].desc
         return cell
     }
     

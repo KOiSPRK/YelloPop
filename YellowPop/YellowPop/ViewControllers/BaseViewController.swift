@@ -47,6 +47,8 @@ class BaseViewController: UIViewController {
     func showDialog(title:String, message:String) {
         DispatchQueue.main.async {
             let dialog = AZDialogViewController(title: title, message: message)
+            dialog.titleColor = .black
+            dialog.messageColor = .darkGray
             dialog.blurBackground = false
             dialog.dismissWithOutsideTouch = true
             dialog.show(in: self)
@@ -56,6 +58,8 @@ class BaseViewController: UIViewController {
     func showError(title:String = "Error", error:String?) {
         DispatchQueue.main.async {
             let dialog = AZDialogViewController(title: title, message: error ?? "Unknown Error")
+            dialog.titleColor = .black
+            dialog.messageColor = .darkGray
             dialog.blurBackground = false
             dialog.dismissWithOutsideTouch = true
             dialog.addAction(AZDialogAction(title: "Ok") { (dialog) -> (Void) in

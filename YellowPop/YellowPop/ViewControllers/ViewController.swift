@@ -26,17 +26,8 @@ class ViewController: BaseViewController {
         self.resultButton.isHidden = true
         self.resultButton.round()
         self.updateSubmitButtonState(with: false)
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(self.didEnterBackground), name: UIApplication.didEnterBackgroundNotification, object: nil)
     }
-    deinit {
-        NotificationCenter.default.removeObserver(self)
-    }
-    
-    @objc func didEnterBackground(notification : NSNotification) {
-        self.presentedViewController?.dismiss(animated: true, completion: nil)
-    }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is HistoryViewController {
             let vc = segue.destination as? HistoryViewController

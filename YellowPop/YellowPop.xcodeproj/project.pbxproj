@@ -17,6 +17,7 @@
 		B27838A42365E7E500CC2D61 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B19E3D23654800000C1881 /* Number.swift */; };
 		B27838A62365E93800CC2D61 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27838A52365E93800CC2D61 /* ViewModel.swift */; };
 		B27838A82365EAD200CC2D61 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27838A72365EAD200CC2D61 /* History.swift */; };
+		B286C3AD2369492800D6BAAC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B286C3AC2369492800D6BAAC /* Constant.swift */; };
 		B29AA9252367FBC900302CF4 /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29AA9212367EB6300302CF4 /* ApplicationError.swift */; };
 		B2B19E3523654416000C1881 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B19E3423654416000C1881 /* APIService.swift */; };
 		B2B19E372365443B000C1881 /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B19E362365443B000C1881 /* Parse.swift */; };
@@ -127,6 +128,7 @@
 		B27838A12365E4C800CC2D61 /* PrimeLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeLogic.swift; sourceTree = "<group>"; };
 		B27838A52365E93800CC2D61 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B27838A72365EAD200CC2D61 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		B286C3AC2369492800D6BAAC /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		B29AA9212367EB6300302CF4 /* ApplicationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationError.swift; sourceTree = "<group>"; };
 		B2B19E3423654416000C1881 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		B2B19E362365443B000C1881 /* Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parse.swift; sourceTree = "<group>"; };
@@ -247,6 +249,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		B286C3AB2369491200D6BAAC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B286C3AC2369492800D6BAAC /* Constant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		B29AA92623680B4300302CF4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +311,7 @@
 				B2DED18E2363D97D004DE2BB /* Info.plist */,
 				B2DED1F62363DEF6004DE2BB /* Resources */,
 				B2DED1F52363DEEE004DE2BB /* Core */,
+				B286C3AB2369491200D6BAAC /* Constants */,
 				B251E9972363E46C00B71215 /* Extensions */,
 				B2DED1FB2363DF83004DE2BB /* Models */,
 				B2DED1FA2363DF7A004DE2BB /* ViewModels */,
@@ -798,6 +809,7 @@
 			files = (
 				B251E9992363E48F00B71215 /* UIButtonExtension.swift in Sources */,
 				B27838A82365EAD200CC2D61 /* History.swift in Sources */,
+				B286C3AD2369492800D6BAAC /* Constant.swift in Sources */,
 				B2DED1812363D97C004DE2BB /* AppDelegate.swift in Sources */,
 				B251E99D2363E75800B71215 /* HistoryViewController.swift in Sources */,
 				B22CD781236685F300551B8C /* BaseViewController.swift in Sources */,
