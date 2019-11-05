@@ -20,10 +20,14 @@ class LogicTests: XCTestCase {
     }
 
     func testPrimeLogic() {
-        let value:Int = 50
+        let value:Int = 20
+        
+        for i in 2..<value {
+            XCTAssertEqual(isPrime(with: i), optimizedPrime(with: i))
+        }
         
         XCTAssertTrue(value > 1, "Prime Number must be greater than 1")
-        XCTAssertEqual(isPrime(with: value), PrimeLogic.isPrime(with: value))
+        XCTAssertEqual(isPrime(with: value), optimizedPrime(with: value))
     }
     
     func isPrime(with value:Int) -> Bool {
@@ -36,6 +40,20 @@ class LogicTests: XCTestCase {
             }
         }
         return true
+    }
+    
+    func optimizedPrime(with value:Int) -> Bool {
+        switch value {
+        case 0, 1:  return false
+        case 2, 3:  return true
+        default:
+            for i in 2...(value/2) {
+                if value % i == 0 {
+                    return false
+                }
+            }
+            return true
+        }
     }
 
     func testPerformanceExample() {
