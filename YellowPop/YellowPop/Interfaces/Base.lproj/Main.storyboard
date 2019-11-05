@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mxw-5B-d55">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mxw-5B-d55">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -90,7 +90,7 @@
                                 </constraints>
                             </stackView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmg-y9-2PF">
-                                <rect key="frame" x="137" y="348" width="140" height="140"/>
+                                <rect key="frame" x="137" y="378" width="140" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="Mb0-OY-3uq"/>
                                     <constraint firstAttribute="width" constant="140" id="kZB-cG-2A1"/>
@@ -108,10 +108,11 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lHs-gN-udJ" secondAttribute="trailing" constant="20" id="4qB-QS-wS6"/>
-                            <constraint firstItem="bmg-y9-2PF" firstAttribute="top" secondItem="lHs-gN-udJ" secondAttribute="bottom" constant="70" id="TqH-SD-ptv"/>
+                            <constraint firstItem="bmg-y9-2PF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eRE-yf-e2v"/>
                             <constraint firstItem="lHs-gN-udJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="fpU-Cz-Lg7"/>
                             <constraint firstItem="lHs-gN-udJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hCK-yZ-KKw"/>
                             <constraint firstItem="bmg-y9-2PF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="juW-xF-y4r"/>
+                            <constraint firstItem="bmg-y9-2PF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="niZ-0y-t0c" secondAttribute="bottom" constant="10" id="qGy-1s-Ia2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
